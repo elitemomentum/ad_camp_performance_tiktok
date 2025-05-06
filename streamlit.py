@@ -4,8 +4,8 @@ import joblib
 import numpy as np
 
 # Load the trained model and label encoders
-model = joblib.load(r'C:\Users\navne\Downloads\notebooks\ad_camp\tiktok\regression_model.joblib')
-label_encoders = joblib.load(r'C:\Users\navne\Downloads\notebooks\ad_camp\tiktok\label_encoders.joblib')
+model = joblib.load("regression_model.joblib")
+label_encoders = joblib.load("label_encoders.joblib")
 
 # Function to apply label encoding to the input data
 def encode_input_data(input_df, label_encoders):
