@@ -11,7 +11,7 @@ st.set_page_config(page_title="Loan Disbursal Predictor", layout="centered")
 # Load model
 @st.cache_resource
 def load_model():
-    model = joblib.load(r"C:\Users\navne\Downloads\notebooks\ad_camp\ad_camp_performance\regression_model.joblib")
+    model = joblib.load(r"regression_model.joblib")
     return model
 
 model = load_model()
