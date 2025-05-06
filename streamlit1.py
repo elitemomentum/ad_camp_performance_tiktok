@@ -19,6 +19,15 @@ model = load_model()
 # Sidebar input form
 st.sidebar.title("📊 Input Features")
 
+# Display app description in light grey at the bottom
+st.markdown(
+    "<hr style='margin-top: 50px;'>"
+    "<p style='text-align: center; color: grey;'>"
+    "This ad campaign tracker predicts estimated loan disbursal based on user engagement metrics and audience demographics, helping marketers assess campaign performance and optimize future targeting strategies in real-time."
+    "</p>",
+    unsafe_allow_html=True
+)
+
 # Instructions
 st.sidebar.markdown("**Instructions:**")
 st.sidebar.markdown("- `Impressions`: Total number of times the ad was viewed. Typically between 1000 - 100000.")
