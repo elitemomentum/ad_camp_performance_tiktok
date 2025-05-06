@@ -17,7 +17,7 @@ def load_model():
 model = load_model()
 
 # Sidebar input form
-st.sidebar.title("📊 Input Features")
+st.sidebar.title(" Input Features")
 
 # Display app description in light grey at the bottom
 st.markdown(
@@ -58,7 +58,7 @@ def encode_random(df, col, options):
     return df
 
 # Predict button
-if st.sidebar.button("🚀 Predict Loan Disbursal"):
+if st.sidebar.button(" Predict Loan Disbursal"):
     # Prepare input
     input_data = {
         'EngagementLikes': likes,
